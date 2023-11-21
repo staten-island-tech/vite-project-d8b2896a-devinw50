@@ -1,3 +1,46 @@
-body {
-    background-color: red;
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: rgb(183, 133, 67);
+}
+
+:root {
+    --black: #000;
+    --light-yellow: #FFF04F;
+    --dark-yellow: #d1c000;
+    --dark-red: #a40000;
+    --light-red: #ee3f3f;
+
+    /*intentions*/
+}
+.warm {
+  --primary:  var(--light-red);
+  --secondary: var(--light-yellow);
+}
+
+.cool{
+  --primary: var(--dark-red);
+  --secondary: var(--dark-yellow)
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10rem;
+  transition: all 0.2s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
 }
