@@ -5,17 +5,20 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  background-color: rgb(183, 133, 67);
+  background-color: rgb(255, 255, 255);
 }
 
 :root {
     --black: #000;
     --light-yellow: #FFF04F;
-    --dark-yellow: #d1c000;
-    --dark-red: #a40000;
+    --dark-yellow: #ffe100;
+    --dark-red: #f31111;
     --light-red: #ee3f3f;
 
     /*intentions*/
+
+    /*Title Sizes*/
+    --h1: 6.594rem;
 }
 .warm {
   --primary:  var(--light-red);
@@ -26,6 +29,18 @@ body,
   --primary: var(--dark-red);
   --secondary: var(--dark-yellow)
 }
+.hi{
+  background-color: var(--dark-red);
+}
+.main {
+  background-color: var(--secondary);
+  height: 90vh;
+}
+h1 {
+  font-size: var(--h1);
+  text-align: center;
+}
+
 
 .btn,
 .btn:link,
